@@ -1,0 +1,209 @@
+mixin svg(name)
+    svg(class="icon icon-" + name)
+        use(xlink:href="images/sprite/sprite.svg#"+name)
+html(lang='ru') 
+    head 
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        link(rel="stylesheet", href="css/owl.carousel.css")
+        link(rel="stylesheet", href="css/owl.theme.default.css")
+        link(rel="stylesheet", href="css/cssmenu.css")
+        script(src="js/jquery-1.10.2.js") 
+        script(src="js/owl.carousel.min.js")
+        script(src="js/main.js")
+        script(src="js/jquery.maskedinput.min.js")
+        script 
+            include js/slider.js
+        title Заголовок title
+    body
+        header  
+            .main
+                .h-row 
+                    .b-soc 
+                        a(href="#")
+                            +svg('vk')
+                        a(href="#")
+                            +svg('facebook')
+                        a(href="#")
+                            +svg('inst')
+                    .logo 
+                        a(href="/")
+                            img(src="images/logo.png", alt="Обнинское городское собрание") 
+                    .b-search 
+                        a(href="#")     
+                            +svg('look')
+                        a(href="#")     
+                            +svg('search')
+                        .menu-but-w
+                            .menu-ico
+                                span
+                h1 Обнинское городское собрание
+            .h-line
+        nav
+            ul#cssmenu 
+                li 
+                    a(href="#") Избирателям  
+                li 
+                    a(href="#") Глава городского собрания  
+                li 
+                    a(href="#") Структура городского собрания 
+                li 
+                    a(href="#") Деятельность  
+                li.str
+                    .but-submenu
+                    a(href="#") Депутаты  
+                    ul.b-menu__m1 
+                        li  
+                            a(href="#") График приема
+                        li  
+                            a(href="#") График приема
+                        li  
+                            a(href="#") График приема
+                        li  
+                            a(href="#") График приема
+                li 
+                    a(href="#") История
+        main 
+            section.main-news 
+                .main-news-slider 
+                    #slider.owl-carousel.owl-theme
+                        .main-news-slider-item
+                            .slider-row 
+                                .slider-row__zag 
+                                    a(href='#') Андрей Бородин поздравил лауреатов детского фотоконкурса
+                                .slider-row__date 31.01.2022
+                            img(src="images/pic1.jpg", alt="")
+                        .main-news-slider-item
+                            .slider-row 
+                                .slider-row__zag 
+                                    a(href='#') Андрей Бородин поздравил лауреатов детского фотоконкурса
+                                .slider-row__date 31.01.2022
+                            img(src="images/pic1.jpg", alt="")
+                .main-news-right
+                    .main-news__baner 
+                        img(src="images/pic3.jpg", alt="")
+                    .main-news-item 
+                        .main-news-item__img 
+                            a(href='#') 
+                                img(src="images/pic2.jpg", alt="")
+                        .main-news-item-row
+                            .main-news-item__name 
+                                a(href='#') Депутат городского Собрания Дмитрий Заеленков принял участие в программе «Власть»
+                            .main-news-item__date 31.01.2022
+            section.b-main-news-list 
+                .main-news-list 
+                    .main-news-list-item 
+                        .main-news-list__date 20.02.2022
+                        .main-news-list__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                    .main-news-list-item 
+                        .main-news-list__date 20.02.2022
+                        .main-news-list__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                    .main-news-list-item 
+                        .main-news-list__date 20.02.2022
+                        .main-news-list__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                    .main-news-list-item 
+                        .main-news-list__date 20.02.2022
+                        .main-news-list__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                .but
+                    a(href='#') Больше новостей
+            section.b-main-smi 
+                .main-smi   
+                    h2 Публикации в СМИ
+                    .main-smi-item 
+                        .main-smi__date 20.02.2022
+                        .main-smi__name 
+                            a(href='#') За вклад в развитие культуры
+                    .main-smi-item 
+                        .main-smi__date 20.02.2022
+                        .main-smi__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                    .main-smi-item 
+                        .main-smi__date 20.02.2022
+                        .main-smi__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                    .but
+                        a(href='#') Смотреть все
+                .main-aside 
+                    .main-aside-row
+                        .main-aside-logo 
+                            .main-aside-logo__img 
+                                img(src="images/logo.png", alt="")
+                            .main-aside-logo__menu
+                                a(href="#") Устав города
+                                a(href="#") Флаг города
+                                a(href="#") Герб города 
+                        ul.main-aside-menu 
+                            li
+                                +svg('control-schet')
+                                a(href="#") КОНТРОЛЬНО-СЧЕТНАЯ ПАЛАТА
+                            li
+                                +svg('pochet-gr')
+                                a(href="#") Почётные граждане
+                            li
+                                +svg('protivod') 
+                                a(href="#") Противодействие коррупции
+                    .main-aside-baner 
+                        img(src="images/pic4.jpg", alt="")
+            section.b-meropr 
+                h2 Мероприятия
+                .meropr
+                    .meropr-item 
+                        .meropr__date 20.02.2022
+                        .meropr__name 
+                            a(href='#') 25 января 2022 года (вторник) <br>в 16:00 в к.404 (пл.Преображения,1) состоится 23-е заседание Обнинского городского Собрания
+                    .meropr-item 
+                        .meropr__date 20.02.2022
+                        .meropr__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                    .meropr-item 
+                        .meropr__date 20.02.2022
+                        .meropr__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                    .meropr-item 
+                        .meropr__date 20.02.2022
+                        .meropr__name 
+                            a(href='#') 27 января - День полного освобождения Ленинграда от фашистской блокады
+                .but
+                    a(href='#') Смотреть все
+        footer 
+            .main 
+                .footer-slider 
+                    #slider-footer.owl-carousel.owl-theme
+                        .footer-sl-item 
+                            img(src="images/baner1.jpg", alt="")
+                        .footer-sl-item 
+                            img(src="images/baner2.jpg", alt="")
+                        .footer-sl-item 
+                            img(src="images/baner3.jpg", alt="")
+                        .footer-sl-item 
+                            img(src="images/baner1.jpg", alt="")
+                        .footer-sl-item 
+                            img(src="images/baner2.jpg", alt="")
+                .footer-row 
+                    .footer-schetchik 
+                    .footer-info
+                        p. 
+                            Обнинское городское Собрание. Официальный сайт представительного органа местного самоуправления города Обнинска<br>
+                            При полном или частичном использовании материалов ссылка на «gs-obninsk.ru» обязательна
+                        span.footer-adres. 
+                            249037, Калужская область, г. Обнинск, пл. Преображения, 1.  <br>
+                            Телефон: (48439) 5-82-00   Факс: (48439) 5-82-00<br>
+                            E-mail: sobranie@admobninsk.ru    
+                    .footer-created 
+                        p Создание сайта: 
+                            - let kp = '<span>K</span>project';
+                            a(href="https://kproject.su", target='_blank') !{kp}
+        #topcontrol(title='К началу страницы')
+        script(src="js/wow.min.js") 
+        script(src="js/jquery.fancybox.min.js") 
+        script 
+            include js/wow.js
+                
+                
