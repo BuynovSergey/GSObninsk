@@ -1,0 +1,68 @@
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin:0;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+#slider .owl-nav .owl-prev,#slider .owl-nav .owl-next { position:absolute; width:28px; height:46px; padding:0; margin:-23px 0 0 0; text-align:left; top:50%; cursor:pointer; opacity:0.5}
+#slider .owl-nav .owl-prev { background:url(../../images/svg/next.svg) no-repeat left top / cover; left:22px; transform: rotate(-180deg); }
+#slider .owl-nav .owl-next { background:url(../../images/svg/next.svg) no-repeat right top / cover; right:22px; }
+#slider-footer .owl-nav .owl-prev,#slider-footer .owl-nav .owl-next { position:absolute; width:45px; height:28px; padding:0; margin:-34px 0 0 0; text-align:left; top:50%; cursor:pointer; opacity:0.5}
+#slider-footer .owl-nav .owl-prev { background:url(../../images/svg/str.svg) no-repeat left top / cover; left:-94px; transform: rotate(-180deg); }
+#slider-footer .owl-nav .owl-next { background:url(../../images/svg/str.svg) no-repeat right top / cover; right:-94px; }
+  /*.owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }*/
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;  margin: 16px 0 0 0;}
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px;
+      margin: 5px 7px;
+      border: #08345b solid 2px;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #08345b; }
+/*.owl-item img { height:100%; width:100%;}*/
+
+@media only screen and (max-width: 1100px){
+  #slider .owl-nav .owl-prev, #slider .owl-nav .owl-next { width: 22px; height: 36px;}
+}
+@media only screen and (max-width: 1024px){
+  #slider-footer .owl-nav .owl-next { right: -40px; }
+  #slider-footer .owl-nav .owl-prev { left: -40px; }
+}
+@media only screen and (max-width: 330px){
+  #slider-footer .owl-nav .owl-next { width: 36px; height: 22px; right: -30px; }
+  #slider-footer .owl-nav .owl-prev { width: 36px; height: 22px; left: -30px; }
+}

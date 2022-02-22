@@ -1,0 +1,268 @@
+
+<html lang="ru"> 
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.default.css">
+		<link rel="stylesheet" href="css/cssmenu.css">
+		<script src="js/jquery-1.10.2.js"> </script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script>
+			 $(document).ready(function(){
+	var owl = $('#slider');
+	owl.owlCarousel({
+		items:1,
+		margin:0,
+		loop:true,navText: ['', ''],
+		dots:true,
+		nav:true,
+		autoplay:false,
+		autoplayTimeout:3000,
+		autoplayHoverPause:true,
+	});
+	var owl2 = $('#slider-footer');
+	owl2.owlCarousel({
+		items:3,
+		margin:0,
+		loop:true,navText: ['', ''],
+		dots:true,
+		nav:true,
+		autoplay:false,
+		autoplayTimeout:3000,
+		autoplayHoverPause:true,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			860:{
+				items:3
+			}
+		}
+	});	
+});
+		</script>
+		<title>Заголовок title</title>
+	</head>
+	<body>
+		<header> 
+			<div class="main">
+				<div class="h-row"> 
+					<div class="b-soc"> <a href="#">
+							<svg class="icon icon-vk">
+								<use xlink:href="images/sprite/sprite.svg#vk"></use>
+							</svg></a><a href="#">
+							<svg class="icon icon-facebook">
+								<use xlink:href="images/sprite/sprite.svg#facebook"></use>
+							</svg></a><a href="#">
+							<svg class="icon icon-inst">
+								<use xlink:href="images/sprite/sprite.svg#inst"></use>
+							</svg></a></div>
+					<div class="logo"> <a href="/"><img src="images/logo.png" alt="Обнинское городское собрание"></a></div>
+					<div class="b-search"> <a href="#">    
+							<svg class="icon icon-look">
+								<use xlink:href="images/sprite/sprite.svg#look"></use>
+							</svg></a><a href="#">    
+							<svg class="icon icon-search">
+								<use xlink:href="images/sprite/sprite.svg#search"></use>
+							</svg></a>
+						<div class="menu-but-w">
+							<div class="menu-ico"><span></span></div>
+						</div>
+					</div>
+				</div>
+				<h1>Обнинское городское собрание</h1>
+			</div>
+			<div class="h-line"></div>
+		</header>
+		<nav>
+			<ul id="cssmenu"> 
+				<li> <a href="#">Избирателям  </a></li>
+				<li> <a href="#">Глава городского собрания  </a></li>
+				<li> <a href="#">Структура городского собрания </a></li>
+				<li> <a href="#">Деятельность  </a></li>
+				<li class="str">
+					<div class="but-submenu"></div><a href="#">Депутаты  </a>
+					<ul class="b-menu__m1"> 
+						<li> <a href="#">График приема</a></li>
+						<li> <a href="#">График приема</a></li>
+						<li> <a href="#">График приема</a></li>
+						<li> <a href="#">График приема</a></li>
+					</ul>
+				</li>
+				<li> <a href="#">История</a></li>
+			</ul>
+		</nav>
+		<main> 
+			<section class="main-news"> 
+				<div class="main-news-slider"> 
+					<div class="owl-carousel owl-theme" id="slider">
+						<div class="main-news-slider-item">
+							<div class="slider-row"> 
+								<div class="slider-row__zag"> <a href="#">Андрей Бородин поздравил лауреатов детского фотоконкурса</a></div>
+								<div class="slider-row__date">31.01.2022</div>
+							</div><img src="images/pic1.jpg" alt="">
+						</div>
+						<div class="main-news-slider-item">
+							<div class="slider-row"> 
+								<div class="slider-row__zag"> <a href="#">Андрей Бородин поздравил лауреатов детского фотоконкурса</a></div>
+								<div class="slider-row__date">31.01.2022</div>
+							</div><img src="images/pic1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="main-news-right">
+					<div class="main-news__baner"> <img src="images/pic3.jpg" alt=""></div>
+					<div class="main-news-item"> 
+						<div class="main-news-item__img"> <a href="#"> <img src="images/pic2.jpg" alt=""></a></div>
+						<div class="main-news-item-row">
+							<div class="main-news-item__name"> <a href="#">Депутат городского Собрания Дмитрий Заеленков принял участие в программе «Власть»</a></div>
+							<div class="main-news-item__date">31.01.2022</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="b-main-news-list"> 
+				<div class="main-news-list"> 
+					<div class="main-news-list-item"> 
+						<div class="main-news-list__date">20.02.2022</div>
+						<div class="main-news-list__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+					<div class="main-news-list-item"> 
+						<div class="main-news-list__date">20.02.2022</div>
+						<div class="main-news-list__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+					<div class="main-news-list-item"> 
+						<div class="main-news-list__date">20.02.2022</div>
+						<div class="main-news-list__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+					<div class="main-news-list-item"> 
+						<div class="main-news-list__date">20.02.2022</div>
+						<div class="main-news-list__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+				</div>
+				<div class="but"><a href="#">Больше новостей</a></div>
+			</section>
+			<section class="b-main-smi"> 
+				<div class="main-smi">  
+					<h2>Публикации в СМИ</h2>
+					<div class="main-smi-item"> 
+						<div class="main-smi__date">20.02.2022</div>
+						<div class="main-smi__name"> <a href="#">За вклад в развитие культуры</a></div>
+					</div>
+					<div class="main-smi-item"> 
+						<div class="main-smi__date">20.02.2022</div>
+						<div class="main-smi__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+					<div class="main-smi-item"> 
+						<div class="main-smi__date">20.02.2022</div>
+						<div class="main-smi__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+					<div class="but"><a href="#">Смотреть все</a></div>
+				</div>
+				<div class="main-aside"> 
+					<div class="main-aside-row">
+						<div class="main-aside-logo"> 
+							<div class="main-aside-logo__img"> <img src="images/logo.png" alt=""></div>
+							<div class="main-aside-logo__menu"><a href="#">Устав города</a><a href="#">Флаг города</a><a href="#">Герб города </a></div>
+						</div>
+						<ul class="main-aside-menu"> 
+							<li>
+								<svg class="icon icon-control-schet">
+									<use xlink:href="images/sprite/sprite.svg#control-schet"></use>
+								</svg><a href="#">КОНТРОЛЬНО-СЧЕТНАЯ ПАЛАТА</a>
+							</li>
+							<li>
+								<svg class="icon icon-pochet-gr">
+									<use xlink:href="images/sprite/sprite.svg#pochet-gr"></use>
+								</svg><a href="#">Почётные граждане</a>
+							</li>
+							<li>
+								<svg class="icon icon-protivod">
+									<use xlink:href="images/sprite/sprite.svg#protivod"></use>
+								</svg><a href="#">Противодействие коррупции</a>
+							</li>
+						</ul>
+					</div>
+					<div class="main-aside-baner"> <img src="images/pic4.jpg" alt=""></div>
+				</div>
+			</section>
+			<section class="b-meropr"> 
+				<h2>Мероприятия</h2>
+				<div class="meropr">
+					<div class="meropr-item"> 
+						<div class="meropr__date">20.02.2022</div>
+						<div class="meropr__name"> <a href="#">25 января 2022 года (вторник) <br>в 16:00 в к.404 (пл.Преображения,1) состоится 23-е заседание Обнинского городского Собрания</a></div>
+					</div>
+					<div class="meropr-item"> 
+						<div class="meropr__date">20.02.2022</div>
+						<div class="meropr__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+					<div class="meropr-item"> 
+						<div class="meropr__date">20.02.2022</div>
+						<div class="meropr__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+					<div class="meropr-item"> 
+						<div class="meropr__date">20.02.2022</div>
+						<div class="meropr__name"> <a href="#">27 января - День полного освобождения Ленинграда от фашистской блокады</a></div>
+					</div>
+				</div>
+				<div class="but"><a href="#">Смотреть все</a></div>
+			</section>
+		</main>
+		<footer> 
+			<div class="main"> 
+				<div class="footer-slider"> 
+					<div class="owl-carousel owl-theme" id="slider-footer">
+						<div class="footer-sl-item"> <img src="images/baner1.jpg" alt=""></div>
+						<div class="footer-sl-item"> <img src="images/baner2.jpg" alt=""></div>
+						<div class="footer-sl-item"> <img src="images/baner3.jpg" alt=""></div>
+						<div class="footer-sl-item"> <img src="images/baner1.jpg" alt=""></div>
+						<div class="footer-sl-item"> <img src="images/baner2.jpg" alt=""></div>
+					</div>
+				</div>
+				<div class="footer-row"> 
+					<div class="footer-schetchik"> </div>
+					<div class="footer-info">
+						<p>
+							Обнинское городское Собрание. Официальный сайт представительного органа местного самоуправления города Обнинска<br>
+							При полном или частичном использовании материалов ссылка на «gs-obninsk.ru» обязательна
+						</p><span class="footer-adres">
+							249037, Калужская область, г. Обнинск, пл. Преображения, 1.  <br>
+							Телефон: (48439) 5-82-00   Факс: (48439) 5-82-00<br>
+							E-mail: sobranie@admobninsk.ru    </span>
+					</div>
+					<div class="footer-created"> 
+						<p>Создание сайта: <a href="https://kproject.su" target="_blank"><span>K</span>project</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="topcontrol" title="К началу страницы"></div>
+		<script src="js/wow.min.js"> </script>
+		<script src="js/jquery.fancybox.min.js"> </script>
+		<script>
+			 wow = new WOW(
+    {
+      boxClass:     'wow',
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log('WOW: animating <' + box.tagName.toLowerCase() + '>')
+      }
+    }
+  );
+  wow.init();
+		</script>
+	</body>
+</html>
